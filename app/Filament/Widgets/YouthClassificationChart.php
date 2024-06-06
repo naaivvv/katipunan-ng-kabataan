@@ -39,6 +39,6 @@ class YouthClassificationChart extends ChartWidget
 
     protected function getType(): string
     {
-        return 'doughnut';
+        return 'radar';
     }
 }

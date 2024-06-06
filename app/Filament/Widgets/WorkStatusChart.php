@@ -42,6 +42,6 @@ class WorkStatusChart extends ChartWidget
 
     protected function getType(): string
     {
-        return 'pie';
+        return 'doughnut';
     }
 }

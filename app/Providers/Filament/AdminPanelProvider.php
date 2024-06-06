@@ -28,6 +28,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->profile(isSimple: false)
             ->sidebarCollapsibleOnDesktop()
             ->colors([
                 'danger' => Color::Red,
@@ -36,12 +37,13 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::Blue,
                 'success' => Color::Green,
                 'warning' => Color::Amber,
+                'indigo' => Color::Indigo,
             ])
             ->defaultThemeMode(ThemeMode::Light)
             ->brandName('Katipunan ng Kabataan Youth Information System')
             ->brandLogo(fn () => view('components.application-mark'))
             ->favicon(asset('logo/sk-logo.png'))
-            ->darkMode(false)
+            // ->darkMode(false)
             ->brandLogoHeight('4rem')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
