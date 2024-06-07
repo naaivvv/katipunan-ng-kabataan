@@ -81,8 +81,17 @@ class Youth8Resource extends Resource
                     ->label(__('Home Address'))
                     ->required()
                     ->maxLength(255),
-                Tables\Columns\TextColumn::make('highest_educational_attainment')
-                    ->searchable(),
+                Forms\Components\Select::make('highest_educational_attainment')
+                    ->options([
+                        'Elementary Level' => 'Elementary Level',
+                        'Elementary Graduate' => 'Elementary Graduate',
+                        'High School Level' => 'High School Level',
+                        'High School Graduate' => 'High School Graduate',
+                        'College Level' => 'College Level',
+                        'College Graduate' => 'College Graduate',
+                        'Vocational Graduate' => 'Vocational Graduate',
+                        'Others' => 'Others',
+                    ]),
                     Forms\Components\Toggle::make('registered_voter')
                     ->label(__('Registered Voter?'))
                     ->required(),

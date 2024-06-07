@@ -83,10 +83,13 @@ class Youth5Resource extends Resource
                     ->maxLength(255),
                 Forms\Components\Select::make('highest_educational_attainment')
                     ->options([
-                        'Elementary' => 'Elementary',
-                        'High School' => 'High School',
-                        'College' => 'College',
-                        'Vocational Course' => 'Vocational Course',
+                        'Elementary Level' => 'Elementary Level',
+                        'Elementary Graduate' => 'Elementary Graduate',
+                        'High School Level' => 'High School Level',
+                        'High School Graduate' => 'High School Graduate',
+                        'College Level' => 'College Level',
+                        'College Graduate' => 'College Graduate',
+                        'Vocational Graduate' => 'Vocational Graduate',
                         'Others' => 'Others',
                     ]),
                     Forms\Components\Toggle::make('registered_voter')
