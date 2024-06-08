@@ -41,12 +41,12 @@ class StatsOverview extends BaseWidget
             ->description('All youths in Sigay')
             ->descriptionIcon('heroicon-m-arrow-trending-up')
             ->color('success'),
-        Stat::make('Punao', Youth::query()->where('purok', 'Punao')->count())
-            ->description('All youths in Punao')
+        Stat::make('Tahong', Youth::query()->where('purok', 'Tahong')->count())
+            ->description('All youths in Tahong')
             ->descriptionIcon('heroicon-m-arrow-trending-up')
             ->color('warning'),
-        Stat::make('Lampisaw', Youth::query()->where('purok', 'Lampisaw')->count())
-            ->description('All youths in Lampisaw')
+        Stat::make('Lagang', Youth::query()->where('purok', 'Lagang')->count())
+            ->description('All youths in Lagang')
             ->descriptionIcon('heroicon-m-arrow-trending-up')
             ->color('info'),
         ];
